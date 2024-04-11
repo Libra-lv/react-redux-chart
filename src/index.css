@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e6f7ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1890ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  margin-bottom: 0;
+}
+.ant-layout-sider-trigger {
+  display: none;
+}
+
+.breadcrumb ol li {
+  color: #fff !important;
+}
+
+.site-tree-search-value {
+  color: #f50;
+}
+
+.custom_css_tree .ant-tree-checkbox {
+  margin-block-start: 0 !important;
+}
+
+.ant-card-body {
+  padding: 16px !important;
+}
+
+.menu_icon_eye {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+.menu_group:hover .menu_icon_eye {
+  display: block;
+}
+
+.collapseExperiment.ant-collapse,
+.collapseExperiment .ant-collapse-content,
+.collapseExperiment .ant-collapse-item {
+  border-color: #1890ff;
+}
+
+.collapseExperiment .ant-collapse-header {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.customConfig_collapse .ant-collapse-header {
+  background-color: transparent;
+  padding: 10px !important;
+  border-color: transparent;
+}
+
+.customConfig_collapse .ant-collapse-content-box {
+  padding-right: 0 !important;
+}
+
+.customConfig_collapse .ant-collapse-item {
+  border-color: transparent;
+}
+
+.customConfig_collapse.ant-collapse {
+  background-color: transparent;
+}
+
+.ant-select-tree-checkbox {
+  margin-block-start: 0px !important;
+}
+
+.customBoxFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.customBoxFilter .ant-checkbox-wrapper {
+  margin-inline-start: 0;
+  margin-bottom: 4px;
+}
+
+.menuViewOptions .ant-menu-item {
+  padding-left: 12px !important;
+}
+
+.viewItem {
+  position: relative;
+  z-index: 1;
+  margin-right: 10px;
+}
+
+.viewItem:hover .viewItem_iconEdit {
+  display: block;
+}
+
+.viewItem_iconEdit {
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+  display: none;
+}
+
+.experiment-results {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.experiment-results th.axis-col.header-label {
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.experiment-results th.axis-col {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #0056b3 inset;
+  font-size: 13px;
+}
+
+.experiment-results th {
+  vertical-align: bottom;
+}
+
+.results-variation-head td {
+  box-shadow: inset 0 -1px hsla(0, 0%, 40%, 0.125);
+}
+
+.results-variation-row td {
+  border-right: 1px solid hsla(0, 0%, 40%, 0.125);
+  border-bottom: 1px solid hsla(0, 0%, 40%, 0.125);
+}
+
+.results-variation-row td.value {
+  border-right: 1px solid hsla(0, 0%, 40%, 0.125);
+}
+
+.experiment-results tbody tr:not(.noborder) {
+  /* box-shadow: inset 0 -1px hsla(0, 0%, 40%, 0.125); */
+}
+
+.experiment-results td,
+.experiment-results th {
+  padding: 0 10px;
+}
+
+.experiment-results
+  tbody
+  tr:not(.noborder):not(.results-label-row)
+  td:not(.graph-cell):not(:last-child) {
+  /* box-shadow: inset -1px 0 hsla(0, 0%, 40%, 0.125); */
+}
+
+.experiment-results tbody tr.results-variation-row,
+.experiment-results tbody tr.results-variation-head {
+  border-left: 1px solid hsla(0, 0%, 40%, 0.125);
+  border-right: 1px solid hsla(0, 0%, 40%, 0.125);
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.experiment-results .lost {
+  color: #ce3729;
+  font-weight: 700;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* start css chart */
+
+.slider_container {
+  margin: 11px 30px 8px;
+}
+
+.slider_horizontal {
+  width: 100%;
+  height: 12px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.88);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider_rail {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.slider_handle {
+  outline: none;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translateX(-50%);
+  border-radius: 100%;
+}
+
+.slider_handle span {
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+}
+
+.slider_handle-left span {
+  top: -4px;
+  right: 15px;
+}
+
+.slider_handle-middle span {
+  top: -15px;
+}
+
+.slider_handle-right span {
+  top: -4px;
+  left: 15px;
+}
+
+.slider_track {
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+}
+
+/* end css chart */
+
+/* start css plot chart */
+.wide_slider {
+  position: relative;
+  border-top: 1px solid hsla(0, 0%, 40%, 0.125);
+  height: 5px;
+}
+.lowestBound {
+  position: absolute;
+  left: 0;
+}
+
+.lowestBound::before {
+  content: "";
+  outline: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: block;
+  background-color: aqua;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+}
+
+.highestBound {
+  position: absolute;
+  right: 0;
+}
+
+.highestBound::before {
+  content: "";
+  outline: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: block;
+  background-color: aqua;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+
+.plot-chart {
+  width: 90%;
+  position: relative;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.plot-chart .slider_track {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* end css plot chart */
